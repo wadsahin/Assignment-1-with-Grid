@@ -62,8 +62,7 @@
         padding: 10vw;
 
     }
-
-    .left-part h1,
+    
     .left-part span {
         font-size: 7vw;
 
@@ -118,7 +117,6 @@
     line-height: 2.5vw;
     padding-bottom: 3vw;
     word-break: break-all;
-
 
 }
 
@@ -213,8 +211,6 @@
 
 .items h1 {
     line-height: 5vw;
-    
-
 }
 
 /* responive-part  */
@@ -229,8 +225,7 @@
 
     .items img {
         width: 80vw;
-
-    
+   
     }
     .items-child {
         margin: 1.5vw;
@@ -280,8 +275,7 @@ footer{
     background-color: black;
     color: #fff;
     text-align: center;
-    
-    
+     
 }
 
 footer h1{
