@@ -9,6 +9,7 @@
     grid-template-columns: 2fr 1.5fr;
     justify-content: center;
     align-items: center;
+   
 
 }
 .left-part{
@@ -69,3 +70,66 @@
     
 }
 /* +++++Responsive Part End++++++ */
+
+/* about me part */
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-left img{
+    width: 95%;
+    margin-left: 7vw;
+}
+
+.about-right{
+    
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-left: 8vw;
+    justify-self: center;
+    align-items: center;
+    
+
+}
+.about-right h1{
+    font-size: 6vw;
+    padding-bottom: 3vw;
+
+}
+.about-right p{
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    padding-bottom: 3vw;
+    word-break:break-all;
+
+
+}
+
+/* responsive part */
+@media only screen and (max-width: 776px){
+    .about-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 7vw;
+        
+    }
+    .about-left{
+        width: 60vw;
+        margin-left: 0vw;
+
+    }
+    .about-right h1{
+        font-size: 8vw;
+    }
+
+    .about-right p{
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    
+}
