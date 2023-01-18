@@ -1,36 +1,42 @@
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
+
 /* *****header part******* */
-.container{
+.container {
     display: grid;
     grid-template-columns: 2fr 1.5fr;
     justify-content: center;
     align-items: center;
-   
+
 
 }
-.left-part{
+
+.left-part {
     padding-left: 10vw;
-   
+
 }
-.left-part h1{
+
+.left-part h1 {
     font-size: 5vw;
     padding-bottom: 2vw;
 
 }
-.left-part span{
-    color:orangered;
+
+.left-part span {
+    color: orangered;
     font-size: 5.5vw;
 }
-.left-part p{
+
+.left-part p {
     font-size: 2vw;
     padding-bottom: 2vw;
 
 }
-#colored-btn{
+
+#colored-btn {
     padding: 1vw;
     border: none;
     border-radius: 8px;
@@ -38,41 +44,46 @@
     color: #fff;
     margin-top: 2vw;
     margin-bottom: 2vw;
-    
+
 
 }
-.right-part{
 
-}
+.right-part {}
 
 /* +++++Responsive Part++++++ */
 @media only screen and (max-width: 776px) {
-    .container{
+    .container {
         grid-template-columns: 1fr;
-        
-        
+
+
     }
-    .left-part{
+
+    .left-part {
         padding: 10vw;
-       
+
     }
-    .left-part h1 , .left-part span{
+
+    .left-part h1,
+    .left-part span {
         font-size: 7vw;
-            
+
     }
-    .left-part p{
+
+    .left-part p {
         font-size: 3vw;
-               
+
     }
-    #colored-btn{
+
+    #colored-btn {
         padding: 2vw;
     }
-    
+
 }
+
 /* +++++Responsive Part End++++++ */
 
 /* about me part */
-.about-container{
+.about-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 2vw;
@@ -81,55 +92,162 @@
 
 }
 
-.about-left img{
+.about-left img {
     width: 95%;
     margin-left: 7vw;
 }
 
-.about-right{
-    
+.about-right {
+
     padding-left: 10vw;
     padding-right: 10vw;
     margin-left: 8vw;
     justify-self: center;
     align-items: center;
-    
 
 }
-.about-right h1{
+
+.about-right h1 {
     font-size: 6vw;
     padding-bottom: 3vw;
 
 }
-.about-right p{
+
+.about-right p {
     font-size: 1.5vw;
     line-height: 2.5vw;
     padding-bottom: 3vw;
-    word-break:break-all;
+    word-break: break-all;
 
 
 }
 
 /* responsive part */
-@media only screen and (max-width: 776px){
-    .about-container{
+@media only screen and (max-width: 776px) {
+    .about-container {
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 7vw;
-        
-    }
-    .about-left{
-        width: 60vw;
-        margin-left: 0vw;
 
     }
-    .about-right h1{
+    .about-right {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-left: 3vw;
+        justify-self: center;
+        align-items: center;
+    
+    }
+
+    .about-left {
+        width: 60vw;
+        margin-left: 0vw;
+        margin-top: 5vw;
+
+    }
+    .about-left img {
+        width: 100%;
+        margin-left: 0vw;
+    }
+
+    .about-right h1 {
         font-size: 8vw;
     }
 
-    .about-right p{
-        font-size: 3vw;
-        line-height: 4vw;
+    .about-right p {
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+
+}
+/* *****About Section End******** */
+
+/* ---------recipi section start------ */
+.recipi-section {
+    background-color: #FBFBFB;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.recipi-article {
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 4vw;
+}
+
+.recipi-article h2 {
+    font-size: 6vw;
+    padding-bottom: 2vw;
+}
+
+.recipi-article p {
+    font-size: 1.5vw;
+}
+
+.item-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 3vw;
+    justify-content: center;
+
+}
+
+.items {
+    background-color: #fff;
+    border-radius: 20px;
+
+    box-shadow: 0px 4px 25px 0px rgb(196, 196, 196);
+}
+
+.items-child {
+    margin: 1.5vw
+}
+
+.items img {
+    width: 25vw;
+
+}
+
+.items h1 {
+    line-height: 5vw;
+    
+
+}
+
+/* responive-part  */
+@media only screen and (max-width: 776px) {
+    .item-container {
+        grid-template-columns: 1fr;
+        width: 80%;
+        display: grid;
+        gap: 5vw;
+       
+    }
+
+    .items img {
+        width: 80vw;
+
+    
+    }
+    .items-child {
+        margin: 1.5vw;
+        padding: 2vw;
+    }
+    .items h1 {
+        line-height: 10vw;
+    
+    }
+    /* ______________ */
+    .recipi-article h2 {
+        font-size: 10vw;
+        padding-bottom: 2vw;
     }
     
+    .recipi-article p {
+        font-size: 3.5vw;
+    }
 }
+/* ---------recipi section End------ */
